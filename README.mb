@@ -1,0 +1,35 @@
+#Inputs
+------------------------------------------
+# Individual input for one line
+```
+4
+3
+```
+    # Method_1
+        number_1 = int(input().strip())
+        number_2 = int(input().strip())
+    # Method_2
+        number_1, number_2 = (int(input()) for _ in range(2))
+
+------------------------------------------
+# Multiples inputs for one line
+```
+2 3 6 6 5
+```
+    # Method_1
+        list = map(int, input().split())
+    # Method_3
+        number_1, number_2 = map(int, input().split())
+
+# Individual input for two lines
+```
+5
+Harry
+37.21s
+Berry
+37.21
+```
+    # Method_1
+        students = [[input(), float(input())] for _ in range(int(input()))]
+        # format_input
+            [['Tina', 37.2], ['Harry', 37.21], ['Berry', 37.21], ['Harsh', 39.0], ['Akriti', 41.0]]
